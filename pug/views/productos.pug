@@ -13,6 +13,7 @@ table
         td=prod.id
         td=prod.title
         td=prod.price
-        td=prod.thumbnail
+        td 
+          img(src=prod.thumbnail alt='s' width='30')
 form(action='/' method='GET')
   button Ingresar producto

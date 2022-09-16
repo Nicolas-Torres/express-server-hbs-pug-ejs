@@ -7,7 +7,7 @@ const router = Router()
 const productos = [{
     title: "The Hobbit",
     price: "45.25",
-    thumbnail: "www.google.com.pe/TheHobbit.png",
+    thumbnail: "https://cdn2.iconfinder.com/data/icons/artificial-intelligence-6/64/ArtificialIntelligence25-256.png",
     id: 1
     }]
 

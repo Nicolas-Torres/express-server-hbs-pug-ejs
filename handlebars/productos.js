@@ -4,15 +4,17 @@ const { Router } = express
 
 const router = Router()
 
-const productos = [{
-    title: "The Hobbit",
-    price: "45.25",
-    thumbnail: "www.google.com.pe/TheHobbit.png",
-    id: 1
-    }]
+const productos = [
+    {
+        title: "The Hobbit",
+        price: "45.25",
+        thumbnail: "https://cdn2.iconfinder.com/data/icons/artificial-intelligence-6/64/ArtificialIntelligence25-256.png",
+        id: 1
+    }
+]
 
 router.get('/productos',(req,res) => {
-    res.render("productos",{productos: productos})
+    res.render("productos", {productos: productos})
     // res.send(productos)
 })
 

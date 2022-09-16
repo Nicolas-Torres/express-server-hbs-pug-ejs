@@ -17,7 +17,9 @@
                 <td><%= prod.id %></td>
                 <td><%= prod.title %></td>
                 <td><%= prod.price %></td>
-                <td><%= prod.thumbnail %></td>
+                <td>
+                    <img src=<%= prod.thumbnail %> width="30" />
+                </td>
             </tr>
         <%}) %>
     </tbody>
