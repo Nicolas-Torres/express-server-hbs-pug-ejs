@@ -1,0 +1,28 @@
+<table>
+    <caption>
+        <h1>PRODUCTOS REGISTRADOS</h1>
+    </caption>
+
+    <thead>
+        <tr>
+            <th>N°</th>
+            <th>Título</th>
+            <th>Precio</th>
+            <th>Imágen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% productos.forEach((prod) => {%>
+            <tr key=<%= prod.id %>>
+                <td><%= prod.id %></td>
+                <td><%= prod.title %></td>
+                <td><%= prod.price %></td>
+                <td><%= prod.thumbnail %></td>
+            </tr>
+        <%}) %>
+    </tbody>
+</table>
+
+<form action="/" method="GET">
+    <button>Ingresar producto</button>
+</form>

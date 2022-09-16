@@ -1,0 +1,18 @@
+table
+  caption
+    h1 PRODUCTOS REGISTRADOS
+  thead
+    tr
+      th N°
+      th Título
+      th Precio
+      th Imágen
+  tbody
+    each prod in productos
+      tr(key=prod.id)
+        td=prod.id
+        td=prod.title
+        td=prod.price
+        td=prod.thumbnail
+form(action='/' method='GET')
+  button Ingresar producto

@@ -1,0 +1,28 @@
+<table>
+    <caption>
+        <h1>PRODUCTOS REGISTRADOS</h1>
+    </caption>
+
+    <thead>
+        <tr>
+            <th>N°</th>
+            <th>Título</th>
+            <th>Precio</th>
+            <th>Imágen</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each productos}}
+            <tr key={{this.id}}>
+                <td>{{this.id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td>{{this.thumbnail}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<form action="/" method="GET">
+    <button>Ingresar producto</button>
+</form>
